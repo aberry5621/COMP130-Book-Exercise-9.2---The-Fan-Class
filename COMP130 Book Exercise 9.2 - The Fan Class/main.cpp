@@ -7,9 +7,25 @@
 //
 
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
+int main() {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    cout << "The Fan Class!\n";
+    
+    /*
+     Fan class:
+     - Int data field named speed that specifies the fan speed (1, 2, 3)
+     - Bool data field "on" for on / off state
+     - double data field define radius of fan
+     - No-arg constructor creates default fan:
+        - speed: 1
+        - on: false
+        - radius: 5
+     - Accessor and mutator functions for all data fields
+     */
+    
+    
+    
     return 0;
 }
