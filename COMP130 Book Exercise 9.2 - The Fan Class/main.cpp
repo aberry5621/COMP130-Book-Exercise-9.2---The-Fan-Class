@@ -25,7 +25,41 @@ int main() {
      - Accessor and mutator functions for all data fields
      */
     
+    class Fan {
+        public:
+        int fan_speed = 0;
+        bool on = 0;
+        double radius = 0.0;
+        
+        Fan() {
+            fan_speed = 1;
+            on = 0;
+            radius = 5.0;
+        }
+        
+        Fan(int spd, bool swc, double rad) {
+            fan_speed = spd;
+            on = swc;
+            radius = rad;
+        }
+        
+    };
     
+    Fan fan_1(3, 1, 10);
     
+    cout << "fan_1 properties" << endl;
+    cout << "================" << endl;
+    cout << "fan_1 speed: " << fan_1.fan_speed << endl;
+    cout << "fan_1 on state: " << fan_1.on << endl;
+    cout << "fan_1 radius: " << fan_1.radius << endl;
+
+    Fan fan_2(2, 0, 5);
+    
+    cout << "fan_2 properties" << endl;
+    cout << "================" << endl;
+    cout << "fan_2 speed: " << fan_2.fan_speed << endl;
+    cout << "fan_2 on state: " << fan_2.on << endl;
+    cout << "fan_2 radius: " << fan_2.radius << endl;
+
     return 0;
 }
