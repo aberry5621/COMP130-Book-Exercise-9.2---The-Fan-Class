@@ -42,7 +42,7 @@ int main() {
             on = swc;
             radius = rad;
         }
-        
+
     };
     
     Fan fan_1(3, 1, 10);
